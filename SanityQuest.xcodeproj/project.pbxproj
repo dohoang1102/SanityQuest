@@ -17,6 +17,7 @@
 		8B0743361550ADC40099C41A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0743311550ADC40099C41A /* AppDelegate.m */; };
 		8B0743371550ADC40099C41A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0743321550ADC40099C41A /* main.m */; };
 		8B0743381550ADC40099C41A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0743351550ADC40099C41A /* ViewController.m */; };
+		8B07433B1550AE660099C41A /* SceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07433A1550AE660099C41A /* SceneObject.m */; };
 		8BB3C5BB153E342F006894C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB3C5BA153E342F006894C8 /* QuartzCore.framework */; };
 		B1816CAF152BBD340082393F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1816CAE152BBD340082393F /* UIKit.framework */; };
 		B1816CB1152BBD340082393F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1816CB0152BBD340082393F /* Foundation.framework */; };
@@ -38,6 +39,8 @@
 		8B0743331550ADC40099C41A /* SanityQuest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SanityQuest-Prefix.pch"; sourceTree = "<group>"; };
 		8B0743341550ADC40099C41A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8B0743351550ADC40099C41A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B0743391550AE660099C41A /* SceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneObject.h; sourceTree = "<group>"; };
+		8B07433A1550AE660099C41A /* SceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneObject.m; sourceTree = "<group>"; };
 		8BB3C5BA153E342F006894C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B1816CAA152BBD340082393F /* SanityQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanityQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1816CAE152BBD340082393F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +93,8 @@
 				8B0743331550ADC40099C41A /* SanityQuest-Prefix.pch */,
 				8B0743341550ADC40099C41A /* ViewController.h */,
 				8B0743351550ADC40099C41A /* ViewController.m */,
+				8B0743391550AE660099C41A /* SceneObject.h */,
+				8B07433A1550AE660099C41A /* SceneObject.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				8B0743361550ADC40099C41A /* AppDelegate.m in Sources */,
 				8B0743371550ADC40099C41A /* main.m in Sources */,
 				8B0743381550ADC40099C41A /* ViewController.m in Sources */,
+				8B07433B1550AE660099C41A /* SceneObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
