@@ -8,20 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-  ObjectTypeUnknown = 0,
-  ObjectTypeHero,
-  ObjectTypeGoblin,
-} ObjectType;
-
 
 @interface SceneObject : NSObject
 
 @property (nonatomic, strong) UIImageView *spriteView;
 @property (nonatomic) BOOL isWalking;
+@property (nonatomic) CGPoint position;
 @property (nonatomic) CGPoint destination;
 
-- (id)initWithObjectType:(ObjectType)objectType;
-- (void)animateWithIndex:(int)animationIndex;
+- (void)animateWithTimestamp:(NSTimeInterval)timestamp;
 
 @end

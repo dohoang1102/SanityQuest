@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SceneObject.h"
+#import "Hero.h"
 
 
 @interface ViewController ()
@@ -67,20 +68,21 @@ hero          = _hero;
   
   // hero
   
-  self.hero = [[SceneObject alloc] initWithObjectType:ObjectTypeHero];
+  self.hero = [Hero new];
   [self.sceneObjects addObject:self.hero];
   
   
   // goblin
   
-  SceneObject *goblin = [[SceneObject alloc] initWithObjectType:ObjectTypeGoblin];
+  SceneObject *goblin = [SceneObject new];
   [self.sceneObjects addObject:goblin];
   
   for (SceneObject *o in self.sceneObjects) {
     [self.view addSubview:o.spriteView];
   }
   
-  self.hero.spriteView.center = CGPointMake(160, 230);
+  self.hero.position = CGPointMake(160, 230);
+  goblin.position = CGPointMake(30, 30);
   
   // create the display link timer that will drive all animations
   self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(animate:)];
@@ -94,17 +96,14 @@ hero          = _hero;
 
 
 - (void)animate:(CADisplayLink *)displayLink {
-  
-  float rate = 3;
-  int animationIndex = [NSDate timeIntervalSinceReferenceDate] * rate;
-  
+    
   for (SceneObject *o in self.sceneObjects) {
     if (o != self.hero) {
       o.isWalking = YES;
       o.destination = self.hero.spriteView.center;
     }
     
-    [o animateWithIndex:animationIndex];
+    [o animateWithTimestamp:displayLink.timestamp];
   }
 }
 

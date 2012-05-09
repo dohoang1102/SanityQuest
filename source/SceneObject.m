@@ -11,7 +11,6 @@
 
 @interface SceneObject ()
 
-@property (nonatomic) ObjectType objectType;
 @property (nonatomic, strong) NSArray *sprites;
 
 @end
@@ -21,19 +20,20 @@
 
 @synthesize
 
-objectType  = _objectType,
-sprites     = _sprites,
 spriteView  = _spriteView,
 isWalking   = _isWalking,
-destination = _destination;
+position    = _position,
+destination = _destination,
+
+sprites     = _sprites;
 
 
-- (id)initWithObjectType:(ObjectType)objectType {
+
+
+- (id)init {
   
   if (!(self = [super init])) { return nil; }
-  
-  self.objectType = objectType;
-  
+    
   self.sprites =
   [NSArray arrayWithObjects:
    [UIImage imageNamed:@"red-0-0.png"],
@@ -47,39 +47,50 @@ destination = _destination;
 }
 
 
+- (CGFloat)maxSpeed {
+  return 1;
+}
 
-- (void)animateWithIndex:(int)animationIndex {
+
+- (void)animateWithTimestamp:(NSTimeInterval)timestamp {
   
+  CGPoint p = self.position;
+
   if (self.isWalking) {
     
+    // update sprite
+    
+    float animationRate = 3; // how many times per second we cycle the sprite
+    int animationIndex = timestamp * animationRate;
+
     int spriteIndex = animationIndex % self.sprites.count;
     
     self.spriteView.image = [self.sprites objectAtIndex:spriteIndex];
     
-    CGPoint c = self.spriteView.center;
+    // update position
     
-    CGFloat dx = self.destination.x - c.x;
-    CGFloat dy = self.destination.y - c.y;
     
-    CGFloat adx = ABS(dx);
-    CGFloat ady = ABS(dy);
+    CGFloat dx = self.destination.x - p.x;
+    CGFloat dy = self.destination.y - p.y;
     
-    if (adx >= ady) {
-      if (dx > 0) c.x += 1;
-      if (dx < 0) c.x -= 1;
-    }
-    else {
-      if (dy > 0) c.y += 1;
-      if (dy < 0) c.y -= 1;
-    }
-    
-    if (adx < 1 && ady < 1) {
-      c = self.destination;
+    if (ABS(dx) < 1 && ABS(dy) < 1) {
+      self.position = self.destination; // force object to final destination
       self.isWalking = NO;
     }
     
-    self.spriteView.center = c;
+    else {
+      CGFloat mag = sqrt(dx * dx + dy * dy);
+      
+      CGFloat m = self.maxSpeed / mag;
+      
+      p.x += dx * m;
+      p.y += dy * m;
+      
+      self.position = p;
+    }    
   }
+  // make sprite view center on integral coordinates
+  self.spriteView.center = CGPointMake(roundf(p.x), roundf(p.y));
 }
 
 
