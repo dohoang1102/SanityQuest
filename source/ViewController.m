@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "SceneObject.h"
 #import "Hero.h"
+#import "UIViewController+SQ.h"
+#import "CG_utils.h"
 
 
 @interface ViewController ()
@@ -31,8 +33,8 @@ sceneObjects  = _sceneObjects,
 hero          = _hero;
 
 
+- (void)updateDestination:(NSSet *)touches {
 
-- (void)updateDestination:(NSSet *)touches {  
   self.hero.isWalking = (touches.count == 1);
   if (self.hero.isWalking) {
     self.hero.destination = [touches.anyObject locationInView:self.view];
@@ -58,11 +60,14 @@ hero          = _hero;
 - (void)loadView {
   
   self.view = [[UIView alloc] initWithFrame:CGRectZero];
+  
+  
   self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+  
   
   UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
   
-  [self.view addSubview:backgroundView];
+   [self.view addSubview:backgroundView];
   
   self.sceneObjects = [NSMutableSet new];
   
@@ -76,6 +81,12 @@ hero          = _hero;
   
   SceneObject *goblin = [SceneObject new];
   [self.sceneObjects addObject:goblin];
+  
+  
+  // george
+  
+  SceneObject *george = [SceneObject new];
+  [self.sceneObjects addObject:george];
   
   for (SceneObject *o in self.sceneObjects) {
     [self.view addSubview:o.spriteView];
@@ -99,7 +110,7 @@ hero          = _hero;
     
   for (SceneObject *o in self.sceneObjects) {
     if (o != self.hero) {
-      o.isWalking = YES;
+      o.isWalking = !CGPointsAreClose(o.position, self.hero.position);
       o.destination = self.hero.spriteView.center;
     }
     

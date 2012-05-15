@@ -7,7 +7,7 @@
 //
 
 #import "SceneObject.h"
-
+#import "CG_utils.h"
 
 @interface SceneObject ()
 
@@ -90,7 +90,7 @@ sprites     = _sprites;
     }    
   }
   // make sprite view center on integral coordinates
-  self.spriteView.center = CGPointMake(roundf(p.x), roundf(p.y));
+  self.spriteView.center = CGPointSnap(p);
 }
 
 
