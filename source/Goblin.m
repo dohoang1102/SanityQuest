@@ -1,28 +1,28 @@
 //
-//  Hero.m
+//  Goblin.m
 //  SanityQuest
 //
-//  Created by Developer on 5/8/12.
+//  Created by Developer on 5/15/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Hero.h"
+#import "Goblin.h"
 
-@implementation Hero
+@implementation Goblin
 
 - (CGFloat)maxSpeed {
-  return 2;
+  return 1;
 }
 
 
 - (NSArray *)makeSpriteNames {
-
+  
   return [NSArray arrayWithObjects:
-          @"red-0-0.png",
-          @"red-0-1.png",
-          @"red-0-2.png",
+         @"goblin-0-0.png",
           nil];
 }
 
 
 @end
+
+

@@ -11,6 +11,7 @@
 #import "Hero.h"
 #import "UIViewController+SQ.h"
 #import "CG_utils.h"
+#import "Goblin.h"
 
 
 @interface ViewController ()
@@ -79,13 +80,13 @@ hero          = _hero;
   
   // goblin
   
-  SceneObject *goblin = [SceneObject new];
+  Goblin *goblin = [Goblin new];
   [self.sceneObjects addObject:goblin];
   
   
   // george
   
-  SceneObject *george = [SceneObject new];
+  Goblin *george = [Goblin new];
   [self.sceneObjects addObject:george];
   
   for (SceneObject *o in self.sceneObjects) {

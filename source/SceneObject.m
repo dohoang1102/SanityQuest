@@ -29,18 +29,28 @@ sprites     = _sprites;
 
 
 
+- (NSArray *)makeSpriteNames {
+  return [NSArray arrayWithObject:@"default-sprite.png"];
+}
+
+
+- (NSArray *)makeSprites {
+
+  NSMutableArray *m = [NSMutableArray array];
+    for (NSString *s in self.makeSpriteNames) {
+      [m addObject:[UIImage imageNamed:s]];
+    }
+
+  return m;
+}
+
 
 - (id)init {
   
-  if (!(self = [super init])) { return nil; }
+  INIT([super init]);
     
-  self.sprites =
-  [NSArray arrayWithObjects:
-   [UIImage imageNamed:@"red-0-0.png"],
-   [UIImage imageNamed:@"red-0-1.png"],
-   [UIImage imageNamed:@"red-0-2.png"],
-   nil];
-  
+  self.sprites = [self makeSprites];
+   
   self.spriteView = [[UIImageView alloc] initWithImage:[self.sprites objectAtIndex:0]];
 
   return self;

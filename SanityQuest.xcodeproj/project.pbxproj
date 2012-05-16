@@ -21,6 +21,9 @@
 		8BB3C5BB153E342F006894C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB3C5BA153E342F006894C8 /* QuartzCore.framework */; };
 		8BB86E6415631143007705A5 /* UIViewController+SQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6315631143007705A5 /* UIViewController+SQ.m */; };
 		8BB86E6715631435007705A5 /* CG_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6615631435007705A5 /* CG_utils.m */; };
+		8BB86E6915631E0B007705A5 /* default-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB86E6815631E0B007705A5 /* default-sprite.png */; };
+		8BB86E6C1563225F007705A5 /* Goblin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6B1563225F007705A5 /* Goblin.m */; };
+		8BB86E6E1563245C007705A5 /* goblin-0-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB86E6D1563245C007705A5 /* goblin-0-0.png */; };
 		8BEB9E8D1559EBD700E61BF3 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB9E8C1559EBD700E61BF3 /* Hero.m */; };
 		B1816CAF152BBD340082393F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1816CAE152BBD340082393F /* UIKit.framework */; };
 		B1816CB1152BBD340082393F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1816CB0152BBD340082393F /* Foundation.framework */; };
@@ -49,6 +52,10 @@
 		8BB86E6315631143007705A5 /* UIViewController+SQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SQ.m"; sourceTree = "<group>"; };
 		8BB86E6515631435007705A5 /* CG_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_utils.h; sourceTree = "<group>"; };
 		8BB86E6615631435007705A5 /* CG_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_utils.m; sourceTree = "<group>"; };
+		8BB86E6815631E0B007705A5 /* default-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-sprite.png"; sourceTree = "<group>"; };
+		8BB86E6A1563225F007705A5 /* Goblin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goblin.h; sourceTree = "<group>"; };
+		8BB86E6B1563225F007705A5 /* Goblin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goblin.m; sourceTree = "<group>"; };
+		8BB86E6D1563245C007705A5 /* goblin-0-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goblin-0-0.png"; sourceTree = "<group>"; };
 		8BEB9E8B1559EBD700E61BF3 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		8BEB9E8C1559EBD700E61BF3 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		B1816CAA152BBD340082393F /* SanityQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanityQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +90,8 @@
 		8B07431C1550AD530099C41A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8BB86E6D1563245C007705A5 /* goblin-0-0.png */,
+				8BB86E6815631E0B007705A5 /* default-sprite.png */,
 				8B07431D1550AD530099C41A /* background-pixellated.png */,
 				8B07431E1550AD530099C41A /* background.png */,
 				8B07431F1550AD530099C41A /* grass.png */,
@@ -109,6 +118,8 @@
 				8BEB9E8C1559EBD700E61BF3 /* Hero.m */,
 				8BB86E6515631435007705A5 /* CG_utils.h */,
 				8BB86E6615631435007705A5 /* CG_utils.m */,
+				8BB86E6A1563225F007705A5 /* Goblin.h */,
+				8BB86E6B1563225F007705A5 /* Goblin.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -210,6 +221,8 @@
 				8B07432C1550AD530099C41A /* red-0-0.png in Resources */,
 				8B07432D1550AD530099C41A /* red-0-1.png in Resources */,
 				8B07432E1550AD530099C41A /* red-0-2.png in Resources */,
+				8BB86E6915631E0B007705A5 /* default-sprite.png in Resources */,
+				8BB86E6E1563245C007705A5 /* goblin-0-0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +240,7 @@
 				8BEB9E8D1559EBD700E61BF3 /* Hero.m in Sources */,
 				8BB86E6415631143007705A5 /* UIViewController+SQ.m in Sources */,
 				8BB86E6715631435007705A5 /* CG_utils.m in Sources */,
+				8BB86E6C1563225F007705A5 /* Goblin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

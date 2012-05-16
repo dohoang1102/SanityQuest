@@ -19,3 +19,7 @@
 #define BIT(x) ((x) ? 1 : 0)
 
 #define XOR(a, b) (BIT(a) ^ BIT(b))
+
+
+#define INIT(...) \
+if (!(self = (__VA_ARGS__))) return nil;
