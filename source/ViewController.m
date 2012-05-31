@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "SceneObject.h"
 #import "Hero.h"
-#import "UIViewController+SQ.h"
 #import "CG_utils.h"
 #import "Goblin.h"
 

@@ -1,30 +1,30 @@
 //
-//  Goblin.m
+//  Troll.m
 //  SanityQuest
 //
-//  Created by Developer on 5/15/12.
+//  Created by Developer on 5/16/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Goblin.h"
+#import "Troll.h"
 
-@implementation Goblin
+@implementation Troll
+
 
 - (CGFloat)maxSpeed {
-  return 1;
+  return 2;
 }
 
 
 - (NSArray *)makeSpriteNames {
   
   return [NSArray arrayWithObjects:
-         @"goblin-0-0.png",
-         @"goblin-0-1.png",
-         @"goblin-0-2.png", 
+          @"goblin-0-0.png",
+          @"goblin-0-1.png",
+          @"goblin-0-2.png", 
           nil];
 }
 
 
+
 @end
-
-

@@ -11,7 +11,7 @@
 @implementation Hero
 
 - (CGFloat)maxSpeed {
-  return 2;
+  return 2.5;
 }
 
 

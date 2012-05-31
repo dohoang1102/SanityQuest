@@ -9,6 +9,8 @@
 #import "SceneObject.h"
 #import "CG_utils.h"
 
+
+
 @interface SceneObject ()
 
 @property (nonatomic, strong) NSArray *sprites;
@@ -43,6 +45,7 @@ sprites     = _sprites;
 
   return m;
 }
+
 
 
 - (id)init {

@@ -18,8 +18,10 @@
 		8B0743371550ADC40099C41A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0743321550ADC40099C41A /* main.m */; };
 		8B0743381550ADC40099C41A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0743351550ADC40099C41A /* ViewController.m */; };
 		8B07433B1550AE660099C41A /* SceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07433A1550AE660099C41A /* SceneObject.m */; };
+		8B2EC3BA15782224004744CA /* goblin-0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC3B815782224004744CA /* goblin-0-1.png */; };
+		8B2EC3BB15782224004744CA /* goblin-0-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC3B915782224004744CA /* goblin-0-2.png */; };
+		8B428BB71578249600AE0088 /* Troll.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B428BB61578249600AE0088 /* Troll.m */; };
 		8BB3C5BB153E342F006894C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB3C5BA153E342F006894C8 /* QuartzCore.framework */; };
-		8BB86E6415631143007705A5 /* UIViewController+SQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6315631143007705A5 /* UIViewController+SQ.m */; };
 		8BB86E6715631435007705A5 /* CG_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6615631435007705A5 /* CG_utils.m */; };
 		8BB86E6915631E0B007705A5 /* default-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB86E6815631E0B007705A5 /* default-sprite.png */; };
 		8BB86E6C1563225F007705A5 /* Goblin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6B1563225F007705A5 /* Goblin.m */; };
@@ -47,9 +49,11 @@
 		8B0743351550ADC40099C41A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8B0743391550AE660099C41A /* SceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneObject.h; sourceTree = "<group>"; };
 		8B07433A1550AE660099C41A /* SceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneObject.m; sourceTree = "<group>"; };
+		8B2EC3B815782224004744CA /* goblin-0-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goblin-0-1.png"; sourceTree = "<group>"; };
+		8B2EC3B915782224004744CA /* goblin-0-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goblin-0-2.png"; sourceTree = "<group>"; };
+		8B428BB51578249600AE0088 /* Troll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Troll.h; sourceTree = "<group>"; };
+		8B428BB61578249600AE0088 /* Troll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Troll.m; sourceTree = "<group>"; };
 		8BB3C5BA153E342F006894C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		8BB86E6215631143007705A5 /* UIViewController+SQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SQ.h"; sourceTree = "<group>"; };
-		8BB86E6315631143007705A5 /* UIViewController+SQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SQ.m"; sourceTree = "<group>"; };
 		8BB86E6515631435007705A5 /* CG_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_utils.h; sourceTree = "<group>"; };
 		8BB86E6615631435007705A5 /* CG_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_utils.m; sourceTree = "<group>"; };
 		8BB86E6815631E0B007705A5 /* default-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-sprite.png"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				8BB86E6D1563245C007705A5 /* goblin-0-0.png */,
+				8B2EC3B815782224004744CA /* goblin-0-1.png */,
+				8B2EC3B915782224004744CA /* goblin-0-2.png */,
 				8BB86E6815631E0B007705A5 /* default-sprite.png */,
 				8B07431D1550AD530099C41A /* background-pixellated.png */,
 				8B07431E1550AD530099C41A /* background.png */,
@@ -109,7 +115,6 @@
 				8B0743311550ADC40099C41A /* AppDelegate.m */,
 				8B0743321550ADC40099C41A /* main.m */,
 				8B0743331550ADC40099C41A /* SanityQuest-Prefix.pch */,
-				8BB86E6015631123007705A5 /* UIKit */,
 				8B0743341550ADC40099C41A /* ViewController.h */,
 				8B0743351550ADC40099C41A /* ViewController.m */,
 				8B0743391550AE660099C41A /* SceneObject.h */,
@@ -120,17 +125,10 @@
 				8BB86E6615631435007705A5 /* CG_utils.m */,
 				8BB86E6A1563225F007705A5 /* Goblin.h */,
 				8BB86E6B1563225F007705A5 /* Goblin.m */,
+				8B428BB51578249600AE0088 /* Troll.h */,
+				8B428BB61578249600AE0088 /* Troll.m */,
 			);
 			path = source;
-			sourceTree = "<group>";
-		};
-		8BB86E6015631123007705A5 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				8BB86E6215631143007705A5 /* UIViewController+SQ.h */,
-				8BB86E6315631143007705A5 /* UIViewController+SQ.m */,
-			);
-			path = UIKit;
 			sourceTree = "<group>";
 		};
 		B1816C9F152BBD340082393F = {
@@ -223,6 +221,8 @@
 				8B07432E1550AD530099C41A /* red-0-2.png in Resources */,
 				8BB86E6915631E0B007705A5 /* default-sprite.png in Resources */,
 				8BB86E6E1563245C007705A5 /* goblin-0-0.png in Resources */,
+				8B2EC3BA15782224004744CA /* goblin-0-1.png in Resources */,
+				8B2EC3BB15782224004744CA /* goblin-0-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +238,9 @@
 				8B0743381550ADC40099C41A /* ViewController.m in Sources */,
 				8B07433B1550AE660099C41A /* SceneObject.m in Sources */,
 				8BEB9E8D1559EBD700E61BF3 /* Hero.m in Sources */,
-				8BB86E6415631143007705A5 /* UIViewController+SQ.m in Sources */,
 				8BB86E6715631435007705A5 /* CG_utils.m in Sources */,
 				8BB86E6C1563225F007705A5 /* Goblin.m in Sources */,
+				8B428BB71578249600AE0088 /* Troll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
