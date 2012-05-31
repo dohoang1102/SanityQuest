@@ -6,11 +6,12 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "CG_utils.h"
 #import "ViewController.h"
 #import "SceneObject.h"
 #import "Hero.h"
-#import "CG_utils.h"
 #import "Goblin.h"
+#import "Troll.h"
 
 
 @interface ViewController ()
@@ -76,17 +77,15 @@ hero          = _hero;
   self.hero = [Hero new];
   [self.sceneObjects addObject:self.hero];
   
-  
   // goblin
   
   Goblin *goblin = [Goblin new];
   [self.sceneObjects addObject:goblin];
   
+  // troll
   
-  // george
-  
-  Goblin *george = [Goblin new];
-  [self.sceneObjects addObject:george];
+  Troll *troll = [Troll new];
+  [self.sceneObjects addObject:troll];
   
   for (SceneObject *o in self.sceneObjects) {
     [self.view addSubview:o.spriteView];

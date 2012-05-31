@@ -21,6 +21,9 @@
 		8B2EC3BA15782224004744CA /* goblin-0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC3B815782224004744CA /* goblin-0-1.png */; };
 		8B2EC3BB15782224004744CA /* goblin-0-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC3B915782224004744CA /* goblin-0-2.png */; };
 		8B428BB71578249600AE0088 /* Troll.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B428BB61578249600AE0088 /* Troll.m */; };
+		8B428BBC1578258600AE0088 /* troll-0-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B428BB91578258600AE0088 /* troll-0-0.png */; };
+		8B428BBD1578258600AE0088 /* troll-0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B428BBA1578258600AE0088 /* troll-0-1.png */; };
+		8B428BBE1578258600AE0088 /* troll-0-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B428BBB1578258600AE0088 /* troll-0-2.png */; };
 		8BB3C5BB153E342F006894C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB3C5BA153E342F006894C8 /* QuartzCore.framework */; };
 		8BB86E6715631435007705A5 /* CG_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB86E6615631435007705A5 /* CG_utils.m */; };
 		8BB86E6915631E0B007705A5 /* default-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB86E6815631E0B007705A5 /* default-sprite.png */; };
@@ -53,6 +56,9 @@
 		8B2EC3B915782224004744CA /* goblin-0-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goblin-0-2.png"; sourceTree = "<group>"; };
 		8B428BB51578249600AE0088 /* Troll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Troll.h; sourceTree = "<group>"; };
 		8B428BB61578249600AE0088 /* Troll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Troll.m; sourceTree = "<group>"; };
+		8B428BB91578258600AE0088 /* troll-0-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "troll-0-0.png"; sourceTree = "<group>"; };
+		8B428BBA1578258600AE0088 /* troll-0-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "troll-0-1.png"; sourceTree = "<group>"; };
+		8B428BBB1578258600AE0088 /* troll-0-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "troll-0-2.png"; sourceTree = "<group>"; };
 		8BB3C5BA153E342F006894C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8BB86E6515631435007705A5 /* CG_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_utils.h; sourceTree = "<group>"; };
 		8BB86E6615631435007705A5 /* CG_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_utils.m; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				8B0743201550AD530099C41A /* red-0-0.png */,
 				8B0743211550AD530099C41A /* red-0-1.png */,
 				8B0743221550AD530099C41A /* red-0-2.png */,
+				8B428BB91578258600AE0088 /* troll-0-0.png */,
+				8B428BBA1578258600AE0088 /* troll-0-1.png */,
+				8B428BBB1578258600AE0088 /* troll-0-2.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -223,6 +232,9 @@
 				8BB86E6E1563245C007705A5 /* goblin-0-0.png in Resources */,
 				8B2EC3BA15782224004744CA /* goblin-0-1.png in Resources */,
 				8B2EC3BB15782224004744CA /* goblin-0-2.png in Resources */,
+				8B428BBC1578258600AE0088 /* troll-0-0.png in Resources */,
+				8B428BBD1578258600AE0088 /* troll-0-1.png in Resources */,
+				8B428BBE1578258600AE0088 /* troll-0-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

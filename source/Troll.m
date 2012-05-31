@@ -19,9 +19,9 @@
 - (NSArray *)makeSpriteNames {
   
   return [NSArray arrayWithObjects:
-          @"goblin-0-0.png",
-          @"goblin-0-1.png",
-          @"goblin-0-2.png", 
+          @"troll-0-0.png",
+          @"troll-0-1.png",
+          @"troll-0-2.png", 
           nil];
 }
 
